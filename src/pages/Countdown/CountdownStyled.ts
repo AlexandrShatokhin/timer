@@ -7,12 +7,6 @@ export const Container = styled.div`
   padding: 40px 20px;
 `;
 
-export const LinksWrapper = styled.div`
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-around;
-`;
-
 export const TimerWrapper = styled.div`
   margin: 0 auto;
   margin-top: 24px;
@@ -26,7 +20,7 @@ export const TimerWrapper = styled.div`
 export const Title = styled.h1`
   font-size: 42px;
   text-align: center;
-`
+`;
 
 export const Display = styled.div`
   padding: 20px;
@@ -35,7 +29,6 @@ export const Display = styled.div`
   background-color: rgb(241, 250, 215);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 114, 255, 0.2);
-
   transition: all 0.3s ease;
 
   &:hover {
@@ -91,5 +84,23 @@ export const ActiveButton = styled.button`
       inset 0 0 8px rgba(0, 114, 255, 0.3);
     background: linear-gradient(135deg, #00bfff, #0066cc);
     transition: box-shadow 0.3s ease;
+  }
+`;
+
+export const StyledSlider = styled.input`
+  width: 100%;
+  margin: 20px 0;
+`;
+
+export const StyledProgress = styled.progress`
+  width: 100%;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  &::-webkit-progress-bar {
+    background-color: #eee;
+  }
+  &::-webkit-progress-value {
+    background-color: #007bff;
   }
 `;
